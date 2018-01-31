@@ -78,5 +78,6 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/3103-developer-team/3103-developer-team.github.io.git
+  repo: git@github.com:3103-developer-team/3101-blog.git
+  branch: gh-pages
 

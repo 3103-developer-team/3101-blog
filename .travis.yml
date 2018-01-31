@@ -1,0 +1,35 @@
+language: node_js
+node_js: stable
+
+# 只监听 master 分支的改动
+branches:
+  only:
+  - master
+
+# 缓存依赖，节省持续集成时间
+cache:
+  npm: true
+  directories:
+    - node_modules
+
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_3470973a088c_key -iv $encrypted_3470973a088c_iv -in id_rsa_travis.enc -out id_rsa_travis -d
+  # 改变文件权限
+  - chmod 600 ~/.ssh/id_rsa_travis
+  # 配置 ssh
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa_travis
+  - cp .travis/ssh_config ~/.ssh/config
+  # 配置 git 替换为自己的信息
+  - git config --global user.name 'yejx'
+  - git config --global user.email 1028579616@qq.com
+
+install:
+  - npm install hexo-cli -g
+  - npm install
+
+script:
+  # 生成静态页面
+  - hexo clean
+  - hexo g -d
