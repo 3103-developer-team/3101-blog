@@ -14,7 +14,7 @@ cache:
 
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_3470973a088c_key -iv $encrypted_3470973a088c_iv -in id_rsa_travis.enc -out id_rsa_travis -d
+  - openssl aes-256-cbc -K $encrypted_2c31fc5a3567_key -iv $encrypted_2c31fc5a3567_iv -in id_rsa_travis.enc -out id_rsa_travis -d
   # 改变文件权限
   - chmod 600 ~/.ssh/id_rsa_travis
   # 配置 ssh

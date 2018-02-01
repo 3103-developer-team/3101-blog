@@ -68,10 +68,12 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Android-日志监控," />
 
 
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="3103's Notes" type="application/atom+xml" />
@@ -81,16 +83,18 @@
 
 
 
-<meta name="description" content="哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="3103&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="AndroidFeaturesThe Sentry Android SDK is built on top of the main Java SDK and supports all of the same features, configuration options, and more. Adding version 1.6.6 of the Android SDK to a sample a">
+<meta name="keywords" content="Android-日志监控">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android-Sentry错误监控服务">
+<meta property="og:url" content="http://yoursite.com/2018/02/01/Android-Sentry错误监控服务/index.html">
 <meta property="og:site_name" content="3103&#39;s Notes">
-<meta property="og:description" content="哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。">
+<meta property="og:description" content="AndroidFeaturesThe Sentry Android SDK is built on top of the main Java SDK and supports all of the same features, configuration options, and more. Adding version 1.6.6 of the Android SDK to a sample a">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-01T07:26:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3103&#39;s Notes">
-<meta name="twitter:description" content="哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。">
+<meta name="twitter:title" content="Android-Sentry错误监控服务">
+<meta name="twitter:description" content="AndroidFeaturesThe Sentry Android SDK is built on top of the main Java SDK and supports all of the same features, configuration options, and more. Adding version 1.6.6 of the Android SDK to a sample a">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/01/Android-Sentry错误监控服务/"/>
 
 
 
 
 
-  <title>3103's Notes</title>
+  <title>Android-Sentry错误监控服务 | 3103's Notes</title>
   
 
 
@@ -145,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/01/Android-Sentry错误监控服务/" itemprop="url">Android-Sentry错误监控服务</a></h1>
+          <h1 class="post-title" itemprop="name headline">Android-Sentry错误监控服务</h1>
         
 
         <div class="post-meta">
@@ -323,9 +324,7 @@
       
 
       
-        
-          
-            <h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h1><h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>The Sentry Android SDK is built on top of the main Java SDK and supports all of the same features, configuration options, and more. Adding version 1.6.6 of the Android SDK to a sample application that doesn’t even use Proguard only increased the release .apk size by approximately 200KB.</p>
+        <h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h1><h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>The Sentry Android SDK is built on top of the main Java SDK and supports all of the same features, configuration options, and more. Adding version 1.6.6 of the Android SDK to a sample application that doesn’t even use Proguard only increased the release .apk size by approximately 200KB.</p>
 <p>Events will be buffered to disk (in the application’s cache directory) by default. This allows events to be sent at a later time if the device does not have connectivity when an event is created. This can be disabled by setting the option buffer.enabled to false.</p>
 <p>An UncaughtExceptionHandler is configured so that crash events will be stored to disk and sent the next time the application is run.</p>
 <p>The AndroidEventBuilderHelper is enabled by default, which will automatically enrich events with data about the current state of the device, such as memory usage, storage usage, display resolution, connectivity, battery level, model, Android version, whether the device is rooted or not, etc.</p>
@@ -363,8 +362,6 @@
 <h2 id="Uploading-ProGuard-Files"><a href="#Uploading-ProGuard-Files" class="headerlink" title="Uploading ProGuard Files"></a>Uploading ProGuard Files</h2><p>Finally, you need manually upload ProGuard files with sentry-cli as follows:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sentry-cli upload-proguard \</span><br><span class="line">    --android-manifest app/build/intermediates/manifests/full/release/AndroidManifest.xml \</span><br><span class="line">    app/build/outputs/mapping/release/mapping.txt</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -379,275 +376,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3101的哥伦布们">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/gelunbu.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3103's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/01/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-01T11:37:05+08:00">
-                2018-02-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Android-日志监控/" rel="tag"># Android-日志监控</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/06/hexo添加travis-CI/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3101的哥伦布们">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/gelunbu.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3103's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/06/hexo添加travis-CI/" itemprop="url">hexo添加travis CI</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-06T15:25:29+08:00">
-                2017-12-06
-              </time>
+              <a href="/2018/02/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多人写博客，操作步骤繁琐。写一篇博客不仅需要推送博客源码到master分支，而且还要部署到gh-pages分支。</p>
-<p>所以，为了解决这个痛点。引入Travis CI来做部署这件事情。</p>
-<h2 id="添加组织授权"><a href="#添加组织授权" class="headerlink" title="添加组织授权"></a>添加组织授权</h2><p>如果看不到Organizations，说明还没有授权<br><img src="https://ws1.sinaimg.cn/large/006DVXJ3gy1fm799f6kclj31co13gagz.jpg" alt=""></p>
-<p>进入到settings下面，申请授权，通过后，在travis就可以看到仓库信息了<br><img src="https://ws1.sinaimg.cn/large/006DVXJ3gy1fm7e8b9enmj30s20i1jue.jpg" alt=""></p>
-<h2 id="创建SSH-key"><a href="#创建SSH-key" class="headerlink" title="创建SSH key"></a>创建SSH key</h2><p><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></p>
-<h2 id="加入deploy-keys"><a href="#加入deploy-keys" class="headerlink" title="加入deploy keys"></a>加入deploy keys</h2><p>将上一步生成的id_rsa.pub，填入到 repo的 Deploy key<br><img src="http://ww1.sinaimg.cn/large/006DVXJ3gy1fm7emvzpeuj30sb0bhdhk.jpg" alt=""><br>记得要将 Allow write access 的选项选上，这样 Travis CI 才能获得 push 代码的权限</p>
-<h2 id="加密私钥"><a href="#加密私钥" class="headerlink" title="加密私钥"></a>加密私钥</h2><p><code>gem install travis</code><br><code>travis login --auto</code><br><code>travis encrypt-file id_rsa --add</code><br>会生成加密之后的秘钥文件 id_rsa.enc，原来的文件 id_rsa 就可以删掉了</p>
-<h2 id="SSH-Config"><a href="#SSH-Config" class="headerlink" title="SSH Config"></a>SSH Config</h2><p>为了上git默认连接ssh<br>创建一个.travis文件，放置刚才生成的id_rsa.enc<br>并且新建ssh_config文件，写入下面内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    User git</span><br><span class="line">    StrictHostKeyChecking no</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line">    IdentitiesOnly yes</span><br></pre></td></tr></table></figure></p>
-<h2 id="编写travis配置文件"><a href="#编写travis配置文件" class="headerlink" title="编写travis配置文件"></a>编写travis配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">language: node_js</span><br><span class="line">node_js: stable</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只监听 master 分支的改动</span></span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">  - master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 缓存依赖，节省持续集成时间</span></span><br><span class="line">cache:</span><br><span class="line">  npm: <span class="literal">true</span></span><br><span class="line">  directories:</span><br><span class="line">    - node_modules</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">before_install:</span><br><span class="line">  - openssl aes-256-cbc -K <span class="variable">$encrypted_3031c5337047_key</span> -iv <span class="variable">$encrypted_3031c5337047_iv</span> -<span class="keyword">in</span> .travis/id_rsa_repo.pub.enc -out ~/.ssh/id_rsa -d</span><br><span class="line">  <span class="comment"># 改变文件权限</span></span><br><span class="line">  - chmod 600 ~/.ssh/id_rsa</span><br><span class="line">  <span class="comment"># 配置 ssh</span></span><br><span class="line">  - <span class="built_in">eval</span> $(ssh-agent)</span><br><span class="line">  - ssh-add ~/.ssh/id_rsa</span><br><span class="line">  - cp .travis/ssh_config ~/.ssh/config</span><br><span class="line">  <span class="comment"># 配置 git 替换为自己的信息</span></span><br><span class="line">  - git config --global user.name <span class="string">'Travis'</span></span><br><span class="line">  - git config --global user.email Travis@hemayun.com</span><br><span class="line"></span><br><span class="line">install:</span><br><span class="line">  - npm install hexo-cli -g</span><br><span class="line">  - npm install</span><br><span class="line"></span><br><span class="line">script:</span><br><span class="line">  <span class="comment"># 生成静态页面</span></span><br><span class="line">  - hexo clean</span><br><span class="line">  - hexo g -d</span><br></pre></td></tr></table></figure>
-<p>现在只要向项目 push 代码就可以触发travis部署了<br>进入<a href="https://travis-ci.org就可以看到部署的过程了。" target="_blank" rel="noopener">https://travis-ci.org就可以看到部署的过程了。</a><br>并且build通过会有邮件通知。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>.travis.yml 的完整代码可以看我的 .travis.yml 文件，完整的代码看这里<a href="https://github.com/Hema-FE/hema-fe-blog/blob/master/.travis.yml" target="_blank" rel="noopener">https://github.com/Hema-FE/hema-fe-blog/blob/master/.travis.yml</a></p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
-<li>用 Travis CI 自动部署 hexo <a href="http://blog.acwong.org/2016/03/20/auto-deploy-hexo-with-travis-CI/" target="_blank" rel="noopener">http://blog.acwong.org/2016/03/20/auto-deploy-hexo-with-travis-CI/</a></li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -657,10 +415,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -668,6 +427,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -688,8 +451,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -779,6 +551,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Android"><span class="nav-number">1.</span> <span class="nav-text">Android</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Features"><span class="nav-number">1.1.</span> <span class="nav-text">Features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">1.2.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Initialization"><span class="nav-number">1.3.</span> <span class="nav-text">Initialization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.4.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ProGuard"><span class="nav-number">1.5.</span> <span class="nav-text">ProGuard</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradle-Integration"><span class="nav-number">1.6.</span> <span class="nav-text">Gradle Integration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradle-Configuration"><span class="nav-number">1.7.</span> <span class="nav-text">Gradle Configuration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Manual-Integration"><span class="nav-number">1.8.</span> <span class="nav-text">Manual Integration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ProGuard-UUIDs"><span class="nav-number">1.9.</span> <span class="nav-text">ProGuard UUIDs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Uploading-ProGuard-Files"><span class="nav-number">1.10.</span> <span class="nav-text">Uploading ProGuard Files</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -919,6 +707,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
