@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/3103-developer-team-blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/3103-developer-team-blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/3103-developer-team-blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/3103-developer-team-blog/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/3103-developer-team-blog/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/3103-developer-team-blog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/3103-developer-team-blog/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/3103-developer-team-blog/atom.xml" title="3103's Notes" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="3103&#39;s Notes">
+<meta property="og:url" content="https://3103-developer-team.github.io/index.html">
+<meta property="og:site_name" content="3103&#39;s Notes">
+<meta property="og:description" content="哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="3103&#39;s Notes">
+<meta name="twitter:description" content="哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/3103-developer-team-blog/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://3103-developer-team.github.io/"/>
+
+
+
+
+
+  <title>3103's Notes</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/3103-developer-team-blog/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">3103's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Quick notes</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/3103-developer-team-blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/3103-developer-team-blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/3103-developer-team-blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-search">
+          <a href="/3103-developer-team-blog/search/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-search"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://3103-developer-team.github.io/3103-developer-team-blog/2018/02/01/3103/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3101的哥伦布们">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/3103-developer-team-blog/images/gelunbu.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3103's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/3103-developer-team-blog/2018/02/01/3103/" itemprop="url">献给亲爱的3103兄弟们</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-01T23:38:03+00:00">
+                2018-02-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>光阴似箭，时间悄悄的来到了2018年。心里头不禁想起，一起奋斗的3103哥伦布兄弟们。在那里，经历了一段快乐而又温馨的经历，结下了深厚的兄弟友谊。如今我们都心怀远大志向，朝着自己美好的未来努力奋斗，虽各奔天涯，但心若比邻。
+    愿我们内心笃定，无惧未知风雨。
+    兄弟有难，八方支援。感到迷茫不要怕，静下心来，先跟自己对对话，明确自己的方向和目标，做出清晰的规划，然后再一步步地去努力。实在有解决不了的问题，跟兄弟们说，方法总比问题多，除却生死无大事，那些打不死你的，终将使你更强大。
+    其实人生要想做出改变并不难。首先，给自己设定一个人生目标，然后把大目标化成若干个小目标，挨个击破，每天给自己一点成就感，只要做出成绩，就没有理由放弃。只要今天的自己优于昨天的自己，就是最大的成绩。而我们最终都会明白：经年之后，人欲横流，唯简单笃定，方能不乱一心。
+   哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。
+   让我们一起谱写只属于3103的博客，把我们的未来藏在现在的努力里。加油，每一个追梦的哥伦布。
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://3103-developer-team.github.io/3103-developer-team-blog/2018/02/01/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3101的哥伦布们">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/3103-developer-team-blog/images/gelunbu.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3103's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/3103-developer-team-blog/2018/02/01/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-01T15:38:00+00:00">
+                2018-02-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://3103-developer-team.github.io/3103-developer-team-blog/2018/02/01/Android-Sentry错误监控服务/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3101的哥伦布们">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/3103-developer-team-blog/images/gelunbu.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3103's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/3103-developer-team-blog/2018/02/01/Android-Sentry错误监控服务/" itemprop="url">Android-Sentry错误监控服务</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-01T14:46:07+00:00">
+                2018-02-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h1><h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>The Sentry Android SDK is built on top of the main Java SDK and supports all of the same features, configuration options, and more. Adding version 1.6.6 of the Android SDK to a sample application that doesn’t even use Proguard only increased the release .apk size by approximately 200KB.</p>
+<p>Events will be buffered to disk (in the application’s cache directory) by default. This allows events to be sent at a later time if the device does not have connectivity when an event is created. This can be disabled by setting the option buffer.enabled to false.</p>
+<p>An UncaughtExceptionHandler is configured so that crash events will be stored to disk and sent the next time the application is run.</p>
+<p>The AndroidEventBuilderHelper is enabled by default, which will automatically enrich events with data about the current state of the device, such as memory usage, storage usage, display resolution, connectivity, battery level, model, Android version, whether the device is rooted or not, etc.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Using Gradle (Android Studio) in your app/build.gradle add:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'io.sentry:sentry-android:1.6.6'</span></span><br></pre></td></tr></table></figure>
+<p>For other dependency managers see the central Maven repository.</p>
+<h2 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h2><p>Your application must have permission to access the internet in order to send events to the Sentry server. In your AndroidManifest.xml:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.INTERNET"</span> /&gt;</span><br><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_NETWORK_STATE"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>Then initialize the Sentry client in your application’s main onCreate method:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> io.sentry.Sentry;</span><br><span class="line"><span class="keyword">import</span> io.sentry.android.AndroidSentryClientFactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line"></span><br><span class="line">        Context ctx = <span class="keyword">this</span>.getApplicationContext();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Use the Sentry DSN (client key) from the Project Settings page on Sentry</span></span><br><span class="line">        String sentryDsn = <span class="string">"https://publicKey:secretKey@host:port/1?options"</span>;</span><br><span class="line">        Sentry.init(sentryDsn, <span class="keyword">new</span> AndroidSentryClientFactory(ctx));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Alternatively, if you configured your DSN in a `sentry.properties`</span></span><br><span class="line">        <span class="comment">// file (see the configuration documentation).</span></span><br><span class="line">        Sentry.init(<span class="keyword">new</span> AndroidSentryClientFactory(ctx));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>You can optionally configure other values such as environment and release. See the configuration page for ways you can do this.</p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>Now you can use Sentry to capture events anywhere in your application:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> io.sentry.context.Context;</span><br><span class="line"><span class="keyword">import</span> io.sentry.event.BreadcrumbBuilder;</span><br><span class="line"><span class="keyword">import</span> io.sentry.event.UserBuilder;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * An example method that throws an exception.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">unsafeMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="string">"You shouldn't call this!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Note that the ``Sentry.init`` method must be called before the static API</span></span><br><span class="line"><span class="comment">     * is used, otherwise a ``NullPointerException`` will be thrown.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">logWithStaticAPI</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        Record a breadcrumb in the current context which will be sent</span></span><br><span class="line"><span class="comment">        with the next event(s). By default the last 100 breadcrumbs are kept.</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        Sentry.getContext().recordBreadcrumb(</span><br><span class="line">            <span class="keyword">new</span> BreadcrumbBuilder().setMessage(<span class="string">"User made an action"</span>).build()</span><br><span class="line">        );</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Set the user in the current context.</span></span><br><span class="line">        Sentry.getContext().setUser(</span><br><span class="line">            <span class="keyword">new</span> UserBuilder().setEmail(<span class="string">"hello@sentry.io"</span>).build()</span><br><span class="line">        );</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        This sends a simple event to Sentry using the statically stored instance</span></span><br><span class="line"><span class="comment">        that was created in the ``main`` method.</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        Sentry.capture(<span class="string">"This is a test"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            unsafeMethod();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            <span class="comment">// This sends an exception event to Sentry using the statically stored instance</span></span><br><span class="line">            <span class="comment">// that was created in the ``main`` method.</span></span><br><span class="line">            Sentry.capture(e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="ProGuard"><a href="#ProGuard" class="headerlink" title="ProGuard"></a>ProGuard</h2><p>In order to use ProGuard with Sentry you will need to upload the proguard mapping files to Sentry by using our Gradle integration (recommended) or manually by using sentry-cli</p>
+<h2 id="Gradle-Integration"><a href="#Gradle-Integration" class="headerlink" title="Gradle Integration"></a>Gradle Integration</h2><p>Using Gradle (Android Studio) in your app/build.gradle add:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply plugin: <span class="string">'io.sentry.android.gradle'</span></span><br></pre></td></tr></table></figure>
+<p>And declare a dependency in your toplevel build.gradle:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">'io.sentry:sentry-android-gradle-plugin:1.6.6'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The plugin will then automatically generate appropriate ProGuard mapping files and upload them when you run gradle assembleRelease. The credentials for the upload step are loaded from a sentry.properties file in your project root or via environment variables, for more information see the sentry-cli documentation. At the very minimum you will need something like this:</p>
+<p>SHOWING CONFIGURATION FOR:EXAMPLE DSN</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">defaults.project=your-project</span><br><span class="line">defaults.org=your-org</span><br><span class="line">auth.token=YOUR_AUTH_TOKEN</span><br></pre></td></tr></table></figure>
+<p>You can find your authentication token on the Sentry API page. For more information about the available configuration options see /learn/cli/configuration.</p>
+<h2 id="Gradle-Configuration"><a href="#Gradle-Configuration" class="headerlink" title="Gradle Configuration"></a>Gradle Configuration</h2><p>Additionally we expose a few configuration values directly in Gradle:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sentry &#123;</span><br><span class="line">    <span class="comment">// Disables or enables the automatic configuration of proguard</span></span><br><span class="line">    <span class="comment">// for Sentry.  This injects a default config for proguard so</span></span><br><span class="line">    <span class="comment">// you don't need to do it manually.</span></span><br><span class="line">    autoProguardConfig <span class="keyword">true</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Enables or disables the automatic upload of mapping files</span></span><br><span class="line">    <span class="comment">// during a build.  If you disable this you'll need to manually</span></span><br><span class="line">    <span class="comment">// upload the mapping files with sentry-cli when you do a release.</span></span><br><span class="line">    autoUpload <span class="keyword">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Manual-Integration"><a href="#Manual-Integration" class="headerlink" title="Manual Integration"></a>Manual Integration</h2><p>If you choose not to use the Gradle integration, you may handle the processing and upload steps manually. However, it is highly recommended that you use the Gradle integration if at all possible.</p>
+<p>First, you need to add the following to your ProGuard rules file:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-keepattributes LineNumberTable,SourceFile</span><br><span class="line">-dontwarn org.slf4j.**</span><br><span class="line">-dontwarn javax.**</span><br></pre></td></tr></table></figure>
+<h2 id="ProGuard-UUIDs"><a href="#ProGuard-UUIDs" class="headerlink" title="ProGuard UUIDs"></a>ProGuard UUIDs</h2><p>After ProGuard files are generated you will need to embed the UUIDs of the ProGuard mapping files in a properties file named sentry-debug-meta.properties in the assets folder. The Java SDK will look for the UUIDs there to link events to the correct mapping files on the server side.</p>
+<p>Note<br>Sentry calculates UUIDs for proguard files. For more information about how this works see UUID Format.<br>sentry-cli can write the sentry-debug-meta.properties file for you:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sentry-cli upload-proguard \</span><br><span class="line">    --android-manifest app/build/intermediates/manifests/full/release/AndroidManifest.xml \</span><br><span class="line">    --write-properties app/build/intermediates/assets/release/sentry-debug-meta.properties \</span><br><span class="line">    --no-upload \</span><br><span class="line">    app/build/outputs/mapping/release/mapping.txt</span><br></pre></td></tr></table></figure>
+<p>Note that this file needs to be in your APK, so this needs to be run before the APK is packaged. You can do that by creating a gradle task that runs before the dex packaging.</p>
+<p>You can for example add a gradle task after the proguard step and before the dex one which executes sentry-cli to validate and process the mapping files and to write the UUIDs into the properties file:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">gradle.projectsEvaluated &#123;</span><br><span class="line">    android.applicationVariants.each &#123; variant -&gt;</span><br><span class="line">        def variantName = variant.name.capitalize();</span><br><span class="line">        def proguardTask = project.tasks.findByName(</span><br><span class="line">            <span class="string">"transformClassesAndResourcesWithProguardFor$&#123;variantName&#125;"</span>)</span><br><span class="line">        def dexTask = project.tasks.findByName(</span><br><span class="line">            <span class="string">"transformClassesWithDexFor$&#123;variantName&#125;"</span>)</span><br><span class="line">        def task = project.tasks.create(</span><br><span class="line">                name: <span class="string">"processSentryProguardFor$&#123;variantName&#125;"</span>,</span><br><span class="line">                type: Exec) &#123;</span><br><span class="line">            workingDir project.rootDir</span><br><span class="line">            commandLine *[</span><br><span class="line">                <span class="string">"sentry-cli"</span>,</span><br><span class="line">                <span class="string">"upload-proguard"</span>,</span><br><span class="line">                <span class="string">"--write-properties"</span>,</span><br><span class="line">                <span class="string">"$&#123;project.rootDir.toPath()&#125;/app/build/intermediates/assets"</span> +</span><br><span class="line">                    <span class="string">"/$&#123;variant.dirName&#125;/sentry-debug-meta.properties"</span>,</span><br><span class="line">                variant.getMappingFile(),</span><br><span class="line">                <span class="string">"--no-upload"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">        dexTask.dependsOn task</span><br><span class="line">        task.dependsOn proguardTask</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Alternatively you can generate a UUID upfront yourself and then force Sentry to honor that UUID after upload. However this is strongly discouraged!</p>
+<h2 id="Uploading-ProGuard-Files"><a href="#Uploading-ProGuard-Files" class="headerlink" title="Uploading ProGuard Files"></a>Uploading ProGuard Files</h2><p>Finally, you need manually upload ProGuard files with sentry-cli as follows:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sentry-cli upload-proguard \</span><br><span class="line">    --android-manifest app/build/intermediates/manifests/full/release/AndroidManifest.xml \</span><br><span class="line">    app/build/outputs/mapping/release/mapping.txt</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://3103-developer-team.github.io/3103-developer-team-blog/2017/12/06/hexo添加travis-CI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3101的哥伦布们">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/3103-developer-team-blog/images/gelunbu.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3103's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/3103-developer-team-blog/2017/12/06/hexo添加travis-CI/" itemprop="url">hexo添加travis CI</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-06T15:25:29+00:00">
+                2017-12-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多人写博客，操作步骤繁琐。写一篇博客不仅需要推送博客源码到master分支，而且还要部署到gh-pages分支。</p>
+<p>所以，为了解决这个痛点。引入Travis CI来做部署这件事情。</p>
+<h2 id="添加组织授权"><a href="#添加组织授权" class="headerlink" title="添加组织授权"></a>添加组织授权</h2><p>如果看不到Organizations，说明还没有授权<br><img src="https://ws1.sinaimg.cn/large/006DVXJ3gy1fm799f6kclj31co13gagz.jpg" alt=""></p>
+<p>进入到settings下面，申请授权，通过后，在travis就可以看到仓库信息了<br><img src="https://ws1.sinaimg.cn/large/006DVXJ3gy1fm7e8b9enmj30s20i1jue.jpg" alt=""></p>
+<h2 id="创建SSH-key"><a href="#创建SSH-key" class="headerlink" title="创建SSH key"></a>创建SSH key</h2><p><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></p>
+<h2 id="加入deploy-keys"><a href="#加入deploy-keys" class="headerlink" title="加入deploy keys"></a>加入deploy keys</h2><p>将上一步生成的id_rsa.pub，填入到 repo的 Deploy key<br><img src="http://ww1.sinaimg.cn/large/006DVXJ3gy1fm7emvzpeuj30sb0bhdhk.jpg" alt=""><br>记得要将 Allow write access 的选项选上，这样 Travis CI 才能获得 push 代码的权限</p>
+<h2 id="加密私钥"><a href="#加密私钥" class="headerlink" title="加密私钥"></a>加密私钥</h2><p><code>gem install travis</code><br><code>travis login --auto</code><br><code>travis encrypt-file id_rsa --add</code><br>会生成加密之后的秘钥文件 id_rsa.enc，原来的文件 id_rsa 就可以删掉了</p>
+<h2 id="SSH-Config"><a href="#SSH-Config" class="headerlink" title="SSH Config"></a>SSH Config</h2><p>为了上git默认连接ssh<br>创建一个.travis文件，放置刚才生成的id_rsa.enc<br>并且新建ssh_config文件，写入下面内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    User git</span><br><span class="line">    StrictHostKeyChecking no</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line">    IdentitiesOnly yes</span><br></pre></td></tr></table></figure></p>
+<h2 id="编写travis配置文件"><a href="#编写travis配置文件" class="headerlink" title="编写travis配置文件"></a>编写travis配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">language: node_js</span><br><span class="line">node_js: stable</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只监听 master 分支的改动</span></span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">  - master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 缓存依赖，节省持续集成时间</span></span><br><span class="line">cache:</span><br><span class="line">  npm: <span class="literal">true</span></span><br><span class="line">  directories:</span><br><span class="line">    - node_modules</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">before_install:</span><br><span class="line">  - openssl aes-256-cbc -K <span class="variable">$encrypted_3031c5337047_key</span> -iv <span class="variable">$encrypted_3031c5337047_iv</span> -<span class="keyword">in</span> .travis/id_rsa_repo.pub.enc -out ~/.ssh/id_rsa -d</span><br><span class="line">  <span class="comment"># 改变文件权限</span></span><br><span class="line">  - chmod 600 ~/.ssh/id_rsa</span><br><span class="line">  <span class="comment"># 配置 ssh</span></span><br><span class="line">  - <span class="built_in">eval</span> $(ssh-agent)</span><br><span class="line">  - ssh-add ~/.ssh/id_rsa</span><br><span class="line">  - cp .travis/ssh_config ~/.ssh/config</span><br><span class="line">  <span class="comment"># 配置 git 替换为自己的信息</span></span><br><span class="line">  - git config --global user.name <span class="string">'Travis'</span></span><br><span class="line">  - git config --global user.email Travis@hemayun.com</span><br><span class="line"></span><br><span class="line">install:</span><br><span class="line">  - npm install hexo-cli -g</span><br><span class="line">  - npm install</span><br><span class="line"></span><br><span class="line">script:</span><br><span class="line">  <span class="comment"># 生成静态页面</span></span><br><span class="line">  - hexo clean</span><br><span class="line">  - hexo g -d</span><br></pre></td></tr></table></figure>
+<p>现在只要向项目 push 代码就可以触发travis部署了<br>进入<a href="https://travis-ci.org就可以看到部署的过程了。" target="_blank" rel="noopener">https://travis-ci.org就可以看到部署的过程了。</a><br>并且build通过会有邮件通知。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>.travis.yml 的完整代码可以看我的 .travis.yml 文件，完整的代码看这里<a href="https://github.com/Hema-FE/hema-fe-blog/blob/master/.travis.yml" target="_blank" rel="noopener">https://github.com/Hema-FE/hema-fe-blog/blob/master/.travis.yml</a></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
+<li>用 Travis CI 自动部署 hexo <a href="http://blog.acwong.org/2016/03/20/auto-deploy-hexo-with-travis-CI/" target="_blank" rel="noopener">http://blog.acwong.org/2016/03/20/auto-deploy-hexo-with-travis-CI/</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/3103-developer-team-blog/images/gelunbu.jpeg"
+                alt="3101的哥伦布们" />
+            
+              <p class="site-author-name" itemprop="name">3101的哥伦布们</p>
+              <p class="site-description motion-element" itemprop="description">哥伦布思维：想了就要干，这，才是哥伦布思维的可贵之处，自古成功自有道，这个道，往往就是在众人认为不可能的地方闯出来的。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/3103-developer-team-blog/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/3103-developer-team-blog/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/3103-developer-team" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:yourname@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/yourname" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/yourname" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">3101的哥伦布们</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/3103-developer-team-blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/3103-developer-team-blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/3103-developer-team-blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/3103-developer-team-blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/3103-developer-team-blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/3103-developer-team-blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/3103-developer-team-blog/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/3103-developer-team-blog/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/3103-developer-team-blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/3103-developer-team-blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/3103-developer-team-blog/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
