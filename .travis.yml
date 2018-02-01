@@ -31,5 +31,6 @@ install:
 
 script:
   # 生成静态页面
-  - hexo clean
-  - hexo g -d
+  #- hexo clean
+  #- hexo g -d
+  - hexo clean && hexo g && hexo d
